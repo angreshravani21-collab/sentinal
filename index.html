@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SENTINEL // RedKross Research Foundation — InternID 2169</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<canvas id="rain"></canvas>
+<div class="scanlines"></div>
+<div class="vignette"></div>
+<div id="easter-toast">// GHOST PROTOCOL UNLOCKED — matrix mode engaged</div>
+
+<nav>
+  <div class="brand"><span class="dot"></span> REDKROSS // SENTINEL</div>
+  <div class="navlinks">
+    <a href="#mission">Mission</a>
+    <a href="#controls">Security Modules</a>
+    <a href="#lab">Live Lab</a>
+    <a href="#lifecycle">Access Lifecycle</a>
+  </div>
+  <div class="intern-tag">INTERN_ID :: 2169</div>
+</nav>
+
+<header class="hero">
+  <div class="grid-floor"></div>
+  <div class="eyebrow">// REDKROSS RESEARCH FOUNDATION <span class="caret">_</span></div>
+  <h1 class="title">ACCESS&nbsp;GRANTED</h1>
+  <p class="subtitle">A living dossier on <b>ISO/IEC 27001 &amp; 27002</b> access-control practice — identities, credentials, supplier trust — rebuilt as an interactive, three-dimensional briefing. Built during internship <b>#2169</b> at RedKross Research Foundation.</p>
+
+  <div class="shield-stage">
+    <div class="shield" id="shieldEl">
+      <div class="ring r1"></div>
+      <div class="ring r2"></div>
+      <div class="ring r3"></div>
+      <div class="core">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#4dfaff" stroke-width="1.4">
+          <path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/>
+          <path d="M9 12l2 2 4-4" stroke="#39ff8a"/>
+        </svg>
+      </div>
+      <div class="orbit-dot" id="orbitDot"></div>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <a href="#controls" class="btn btn-solid">▸ ENTER THE VAULT</a>
+    <a href="#lab" class="btn btn-ghost">◈ RUN LIVE LAB</a>
+  </div>
+
+  <div class="terminal">
+    <div class="terminal-bar"><span class="d d1"></span><span class="d d2"></span><span class="d d3"></span>&nbsp;&nbsp;sentinel@redkross:~$</div>
+    <div class="terminal-body" id="bootTerminal"></div>
+  </div>
+</header>
+
+<section class="section" id="mission">
+  <div class="section-head">
+    <div class="tag">01 // BRIEFING</div>
+    <h2 class="section-title">The Mission</h2>
+    <p class="section-desc">Every great control framework starts as a boring PDF. This one didn't stay boring.</p>
+  </div>
+  <div class="mission-grid reveal">
+    <div class="mission-card">
+      <p style="color:#dff4ff; font-size:16px; line-height:1.7;">
+        This site translates <b style="color:var(--cyan)">ISO/IEC 27002:2022</b> organizational controls — identity lifecycle, authentication, access rights, and supplier security — into something you'd actually want to click through. It's the internship deliverable for <b style="color:var(--amber)">InternID 2169</b> at the <b style="color:var(--magenta)">RedKross Research Foundation</b>, where the brief was simple: make compliance feel like a control room, not a filing cabinet.
+      </p>
+      <div class="stat-row">
+        <div class="stat"><b>5</b><span>CONTROLS COVERED</span></div>
+        <div class="stat"><b>27002</b><span>ISO STANDARD</span></div>
+        <div class="stat"><b>100%</b><span>FUN INJECTED</span></div>
+      </div>
+      <div class="badge-id">🛡️ CLEARANCE: INTERN_2169 &nbsp;|&nbsp; STATUS: <span style="color:var(--green)">ACTIVE</span></div>
+    </div>
+    <div class="mission-side">
+      <div class="hex-frame">
+        <div class="glyph">REDKROSS<br><span style="color:var(--green);font-size:12px;">RESEARCH FOUNDATION</span><br><br>SECTOR: CYBER<br>PROTOCOL: 27001</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="controls">
+  <div class="section-head">
+    <div class="tag">02 // SECURITY MODULES</div>
+    <h2 class="section-title">Flip the Clause</h2>
+    <p class="section-desc">Hover any module to decrypt its control description. Straight from ISO/IEC 27002 Annex A.</p>
+  </div>
+  <div class="controls-grid">
+
+    <div class="flip-card reveal">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div><div class="clause">CLAUSE 5.16</div><div class="icon">🪪</div><h3>Identity Lifecycle</h3></div>
+          <div class="pip"><span></span><span></span><span></span></div>
+        </div>
+        <div class="flip-back">
+          Every human, bot, and service gets <b>one unique identity</b>, traceable end to end. Shared accounts need documented approval. Leavers get disabled fast — accountability isn't optional.
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card reveal">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div><div class="clause">CLAUSE 5.17</div><div class="icon">🔑</div><h3>Authentication Info</h3></div>
+          <div class="pip"><span></span><span></span><span></span></div>
+        </div>
+        <div class="flip-back">
+          Temporary passwords are <b>random, unique, one-time-use</b>. Default vendor credentials get changed on day one. Nothing travels over plain email — ever.
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card reveal">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div><div class="clause">CLAUSE 5.18</div><div class="icon">🗝️</div><h3>Access Rights</h3></div>
+          <div class="pip"><span></span><span></span><span></span></div>
+        </div>
+        <div class="flip-back">
+          Access follows <b>least privilege</b> and needs asset-owner sign-off. Approver and implementer are never the same person — segregation of duties, enforced.
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card reveal">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div><div class="clause">CLAUSE 5.19</div><div class="icon">🤝</div><h3>Supplier Security</h3></div>
+          <div class="pip"><span></span><span></span><span></span></div>
+        </div>
+        <div class="flip-back">
+          Suppliers are evaluated, scoped, and monitored — every risky component of their access to your systems gets mapped <b>before</b> the contract is signed.
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card reveal">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div><div class="clause">CLAUSE 5.20</div><div class="icon">📜</div><h3>Supplier Agreements</h3></div>
+          <div class="pip"><span></span><span></span><span></span></div>
+        </div>
+        <div class="flip-back">
+          Contracts spell out classification, incident response, audit rights, and secure teardown — so when the relationship ends, so does every byte of access.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="lab">
+  <div class="section-head">
+    <div class="tag">03 // LIVE LAB</div>
+    <h2 class="section-title">Poke the System</h2>
+    <p class="section-desc">Two tiny interactive demos, straight out of the authentication-control playbook.</p>
+  </div>
+
+  <div class="lab-grid reveal">
+    <div class="lab-card">
+      <h3>🔐 Credential Strength Scanner</h3>
+      <p class="hint">Type a password below — nothing is stored, sent, or logged. Try to earn full green.</p>
+      <input type="text" class="pw-input" id="pwInput" placeholder="e.g. SunnyHill2027!">
+      <div class="meter"><div class="meter-fill" id="pwMeter"></div></div>
+      <div class="pw-verdict" id="pwVerdict">// awaiting input...</div>
+    </div>
+
+    <div class="lab-card">
+      <h3>🖥️ Sentinel Console</h3>
+      <p class="hint">Type <b style="color:var(--cyan)">help</b> for available commands. Try <b style="color:var(--cyan)">scan</b>, <b style="color:var(--cyan)">status</b>, or <b style="color:var(--cyan)">clause 5.18</b>.</p>
+      <div class="console" id="consoleOut">
+        <div class="sys">SENTINEL v2.7 // RedKross Research Foundation</div>
+        <div class="sys">type 'help' to begin diagnostics.</div>
+      </div>
+      <div class="cmd-row">
+        <input type="text" id="cmdInput" placeholder="root@sentinel:~$" autocomplete="off">
+        <button id="cmdBtn" onclick="runCommand()">RUN</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="lifecycle">
+  <div class="section-head">
+    <div class="tag">04 // ACCESS LIFECYCLE</div>
+    <h2 class="section-title">From Onboarding to Revocation</h2>
+    <p class="section-desc">The path every identity travels, per the Tech Solutions case study.</p>
+  </div>
+  <div class="lifecycle reveal">
+    <div class="life-step"><div class="life-dot">01</div><h4>REQUEST</h4><p>Manager submits business justification</p></div>
+    <div class="life-step"><div class="life-dot">02</div><h4>APPROVE</h4><p>Asset owner grants least-privilege access</p></div>
+    <div class="life-step"><div class="life-dot">03</div><h4>PROVISION</h4><p>IT activates credentials, logs the event</p></div>
+    <div class="life-step"><div class="life-dot">04</div><h4>REVIEW</h4><p>Quarterly audit against current role</p></div>
+    <div class="life-step"><div class="life-dot">05</div><h4>REVOKE</h4><p>Access dies within 24h of departure</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-brand">REDKROSS // SENTINEL</div>
+  <p>Designed &amp; built for InternID 2169 — RedKross Research Foundation<br>Themed around ISO/IEC 27001 &amp; 27002 access-control practice.</p>
+  <div class="stamp">◈ CLEARANCE VERIFIED ◈</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
